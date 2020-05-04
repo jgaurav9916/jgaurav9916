@@ -1,103 +1,148 @@
-
 {% load static %}
 
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaurav Jha</title>
-    <link href="{% static '/css/main.css' %}" rel ="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+	<title>Gaurav Jha</title>
+	 <link rel = "icon" href =
+"{% static 'images/anchal1.png' %}"
+        type = "image/x-icon">
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Start of Async Callbell Code -->
+<script>
+    window.callbellSettings = {
+      token: "LxUEXWcvioiQdi9uVH7XHhgU"
+    };
+  </script>
+  <script>
+    (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+  </script>
+  <!-- End of Async Callbell Code -->
+  
+  
+
 </head>
 <body>
-    <br>
-    <div class="container">
-        <div class ="row">
-            <div class="col-md-3">
-                <div class ="card card-body h-100 border-info" id="profile-wrapper">
-                    <img id="profile-pic" src="{% static 'images/gaurav.jpeg' %}" >
+	<p><br></p>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+   				<div style="box-shadow: 10px 10px 5px #aaaaaa;
+            transform: rotate(7deg);background-color:white;border-color:#571845;" class=" card card-body h-100 wrapper1 " id="profile-wrapper">
+
+        					<img  id="profile-pic" src="{% static 'images/gaurav.jpg' %}" >
+        					<hr >
+        					<h3  style="color:#FF5733;">Hi I'm Gaurav!</h3>
+        					<br>
+        					<h6 c style="color:black;"><span style="font-size:20px;color:green;margin-left:-5%">while</span>( true ){<br><span style="margin-left:20%">I.Love (coding)</span><br><span style="margin-right:20%">}</span></h6>
+        				</div>
+
+			</div>
+
+			<div class="col-md-7">
+				<div style=" box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(-8deg);background-color:#FF5733;border-color:#571845;" class="card card-body h-100 wrapper2">
+					<h4>About</h4>
+					<hr>
+					<p  style="color:white;">Gaurav Kumar Jha is a Backend developer and currently Studying in Third Year of Bachelor of Technology from Haldia Institute of Technology,W.B.</p>
+
+					<p style="color:white;">He is a Quick learner and a hard-working team person.<br>He has always done my work with full dedication.</p>
+                    
+                    <p>He can Grasp new responsibilites and things in no time.</p>
+                    
+					<p style="color:white;">I am open to all form of tech stack and do not want to ristrict myself by sticking to a single platform in this fast and ever growing world of software development.</p>
+					<ul class="social-links">
+						<li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img class="social" src="{% static 'images/gmail.png' %}"></a></li>
+						<li><a href="https://www.linkedin.com/in/gaurav-kumar-jha-b27476167/" target="_blank"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>
+						<li><a href="https://github.com/jgaurav9916" target="_blank"><img class="social" src="{% static 'images/git.svg' %}"></a></li>
+
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-7">
+				<div style=" box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(-9deg);background-color:#FF5733;border-color:#571845;" class="card card-body h-100 wrapper2">
+					<h5>Trainings and Projects</h5>
+					<hr>
+					<h6>Data Analysis with Python</h6>
+					<p style="color:white;">NIVTIndia,Kolkata(W.B)</p>
+					<h6>Python and DBMS</h6>
+					<p style="color:white;">In House Winter Training at Haldia Institute Of Technology</p>
+					<h5><a style="text-decoration: none;" href="https://github.com/jgaurav9916?tab=repositories">Projects &uarr;</a></h5>
+					<ul  style="color:white;">
+						<li>&#xbb; <strong>Qwiz App :-</strong>This is a simple Python GUI-Tkinter application built with all major concepts of Python.</li>
+						<li>&#xbb; <strong>YatraApp :-</strong>This is a simple Python GUI-Tkinter application which fetches data from backend API to give the route details of the entered train number.</li>
+						<li>&#xbb; <strong>Textutil.co:-</strong>This is a simple Django website where you can do anything with your entered text. </li>
+				
+					</ul>
+					</div>
+			</div>
+
+			<div class="col-md-5">
+				<div style=" box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(7deg);" class="card card-body  wrapper1">
+					<h5>What I Know</h5>
+					<hr>
+					<p>C , Python , Java <br></p>
+					<p>HTML/CSS , JavaScript , Django, bootstrap, nodejs <br><br> linux, DBMS,firebase, MySql </p>
+                    <p><strong>Basic:</strong>   WordPress </p>
+                    <P><strong>PS:</strong>Working on MERN STACK bootcamp.</P>
+				</div>
+				<div style=" box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(7deg);margin-top:20px"  class="card card-body  wrapper1">
+					<h5>Internships</h5>
+					<hr>
+					<h6>under development.........</h6>
+                </div>
+                <div style=" box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(-8deg);margin-top:20px"  class="card card-body  wrapper2">
+				    <h5>Special Achievements</h5>
                     <hr>
-                    <h4>Hi I am Gaurav!</h4>
-                    <p>I am a computer science geek and loves solving problems.</p>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class ="card card-body h-100 border-info">
-                <h4>ABOUT</h4>
-                <hr>
-                <p>Gaurav Kumar Jha is a backend developer and currently Studying in Third Year of Bachelor of Technology degree from Haldia Institute Of Technology,W.B. </p>
+                    <p>2<sup>nd</sup>Round of 6<sup>th</sup>International Mathematics Olympiad. </p>
+					<p>RUNNER-UP at District Badminton Championship.</p>
 
-                <p>He is a Quick learner and a hard-working team person.<br> He has always done his work with full dedication. </p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div style=" box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(7deg);"  class="card card-body h-100 wrapper1">
+				    <h5>How I Learn</h5>
+				    <hr>
+					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
 
-                <p>He can Grasp new responsibilites and things in no time.</p>
-                <p>He is open to all forms of tech stack and do not want to restrict himself by sticking to a single platform in this fast and ever growing world of software development.</p>
+					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
+
+					</div>
+			</div>
+
+			<div class="col-md-6">
+				<div style=" box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(-9deg);background-color:#FF5733;border-color:#571845;" class="card card-body h-100 wrapper2">
+					<h5>My Short Term Goals</h5>
+				<hr>
+				<p  style="color:white;">After almost three years of supporting my system and doing my education i am in final year of my college life and i am ready to learn something new. I Love collaborating and sharing my expirence with others at different social media platforms.</p>
+				<p  style="color:white;">Aside from building small projects I would love to enter a position where i can be a part of a bigger team and learn from others with more experience than myself.</p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<br>
+	</div>
 
 
-                <ul class="social-links">
-                    <li><img class="social" src ="{% static 'images/gmail.png' %}"></li>
-                    <li><a href="{% static 'linkedin.com/in/gaurav-kumar-jha-b27476167/' %}"><img class="social" src ="{% static 'images/linkedin.png' %}"></a></li>
-                    <li><img class="social" src ="{% static 'images/twitter.png' %}"></li>
-
-                </ul>
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <div class ="row">
-            <div class="col-md-6">
-                <div class ="card card-body h-100">
-                    <h5>Trainings and Projects</h5>
-                    <hr>
-                    <p>Training on Data analysis with Python at NIVT Skills. </p>
-                    <p>In-House winter Training on Python and DBMS</p>
-                    <h5>PROJECTS:</h5>
-                    <ul>
-                        <li>Built a Qwiz app with python and backend API</li>
-                        <li>Built a Yatra-app widthhich gives the train routes of the entered train number by fetching data from backend API </li>
-                        <li>Built a simple TO-DO app in javaScript</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class ="card card-body h-100">
-                    <h5>What I Know</h5>
-                    <hr>
-                    <p>Skilled in Python,Core Java,Django,Html/CSS,javaScript,DBMS</p>
-                    <p>Have got some expirence in front-end as-well with frontend javaScript and React.</p>
-
-                    <p>P.S: Working on MERN stack.</p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class ="row">
-            <div class="col-md-6">
-                <div class ="card card-body h-100">
-                    <h5>How I Learn </h5>
-                    <hr>
-                    <p>Reverse Engineer and build ugly Prototypes First.</p>
-
-                    <p>I can learn about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a REFERENCE.</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class ="card card-body h-100">
-                    <h5>My Short Term Goals</h5>
-                    <hr>
-                    <p>After almost three years of supporting my system and doing my education i am in final year of my college life and i am ready to learn something new. I Love collaborating and shring my experience with others at different social media  platforms.</p>
-
-                    <p>Aside from building small projects I would love to enter a position where I can be a part of a bigger team and learn from others with more experience than myself. </p>
-                </div>
-            </div>
-        </div>
-        <br>
-    </div>
-    
 </body>
 </html>
